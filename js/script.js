@@ -63,6 +63,10 @@ button.addEventListener('click', function () {
 
 });
 
+passengerNameElement = document.getElementById('passenger-name')
+
+passengerNameElement.innerText = nameSurname.value
+
 
 
 
