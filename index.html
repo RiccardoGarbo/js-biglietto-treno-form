@@ -5,25 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--BOOTSTRAP-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'
+        integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
+        crossorigin='anonymous' />
     <!--STYLE-->
     <link rel="stylesheet" href="css/style.css">
     <!--JS-->
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
-    <input id="name-surname" type="text" value="Riccardo Garbo">
-    <input id="user-km" type="number" min="1" value="100">
-    <select name="" id="user-age">
-        <option id="under-18" value="16">Under 18</option>
-        </option>
-        <option id="18-65" value="50">
-            18-65
-        </option>
-        <option id="over-65" value="72">Over 65</option>
-    </select>
-    <button id="tkt-generator">Genera</button>
-    <button id="delete">Annulla</button>
+<body class="bg-success">
+    <section class="ticket-form container d-flex justify-content-center flex-wrap gap-5">
+        <input class="text-center" id="name-surname" type="text" value="Riccardo Garbo">
+        <input class="text-center" id="user-km" type="number" min="1" value="100">
+        <select class="text-center" name="" id="user-age">
+            <option id="under-18" value="15">Under 18</option>
+            </option>
+            <option id="18-65" value="25">
+                18-65
+            </option>
+            <option id="over-65" value="72">Over 65</option>
+        </select>
+        <button id="button">Genera</button>
+        <button id="delete">Annulla</button>
+    </section>
+    <section class="ticket container bg-">
+        <div class="passenger">
+            <h2>Dettaglio passeggeri</h1>
+                <div class="ticket-card d-flex              ">
+                    <div class="info-passenger">
+                        <h2>Nome passeggero</h2>
+                        <h3 id="passenger-name"></h3>
+                    </div>
+                    <table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Offerta</th>
+                                    <th scope="col">Carrozza</th>
+                                    <th scope="col">Codice CP</th>
+                                    <th scope="col">Costo biglietto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="fw-normal" scope="row">Biglietto standard</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td id="price-ticket"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+        </div>
+
+
+    </section>
+
+
 </body>
 
 </html>
